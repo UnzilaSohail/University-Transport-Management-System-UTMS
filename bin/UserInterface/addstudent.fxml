@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="10" prefHeight="447.0" prefWidth="440.0" styleClass="login-card" stylesheets="@../application/application.css" vgap="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StudentAddController">
+    <Label prefHeight="32.0" prefWidth="68.0" styleClass="login-bg" stylesheets="@../application/application.css" text="First Name:" GridPane.rowIndex="3" />
+    <TextField fx:id="firstNameField" prefHeight="54.0" prefWidth="295.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Label prefHeight="26.0" prefWidth="70.0" styleClass="login-bg" stylesheets="@../application/application.css" text="Last Name:" GridPane.rowIndex="6" />
+    <TextField fx:id="lastNameField" prefHeight="39.0" prefWidth="295.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+    <Label prefHeight="25.0" prefWidth="74.0" styleClass="login-bg" stylesheets="@../application/application.css" text="Username:" GridPane.rowIndex="7" />
+    <TextField fx:id="usernameField" prefHeight="91.0" prefWidth="295.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+   <TextField fx:id="emailField" prefHeight="54.0" prefWidth="295.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+   <Label prefHeight="25.0" prefWidth="74.0" styleClass="login-bg" stylesheets="@../application/application.css" text="Email" GridPane.rowIndex="9" />
+
+    <Button onAction="#handleSaveButtonAction" prefHeight="25.0" prefWidth="295.0" styleClass="login" stylesheets="@../application/application.css" text="Save" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+   <TextField fx:id="routeNameField" prefHeight="39.0" prefWidth="295.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+   <Label prefHeight="25.0" prefWidth="74.0" styleClass="login-bg" stylesheets="@../application/application.css" text="Route :" GridPane.rowIndex="13" />
+   <TextField fx:id="feeField" prefHeight="39.0" prefWidth="295.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+   <Label prefHeight="25.0" prefWidth="74.0" styleClass="login-bg" stylesheets="@../application/application.css" text="Fees:" GridPane.rowIndex="16" />
+   <TextField fx:id="passwordField" prefHeight="39.0" prefWidth="295.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+   <Label prefHeight="25.0" prefWidth="74.0" styleClass="login-bg" stylesheets="@../application/application.css" text="Password:" GridPane.rowIndex="17" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

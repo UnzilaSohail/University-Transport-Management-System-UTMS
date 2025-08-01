@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AttendanceTrackingController">
+    <children>
+        <Label text="Select Route or Bus:" />
+        <ChoiceBox fx:id="routeChoiceBox" />
+        <Button onAction="#loadStudents" prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" text="Load Students" />
+        <ListView fx:id="studentListView" />
+        <Button onAction="#addAttendance" prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" text="Add Attendance" />
+        <Button onAction="#updateAttendance" prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" text="Update Attendance" />
+        <Button onAction="#deleteAttendance" prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" text="Delete Attendance" />
+        <Button onAction="#viewInfo" prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" text="View Attendance" />
+     <TableView fx:id="attendanceTableView">
+            <columns>
+                <TableColumn fx:id="attendanceIDColumn" text="Attendance ID" />
+                <TableColumn fx:id="studentIDColumn" text="Student ID" />
+                <TableColumn fx:id="dateColumn" text="Date" />
+                <TableColumn fx:id="statusColumn" text="Status" />
+            </columns>
+        </TableView>
+        <Button layoutX="180.0" layoutY="301.0" onAction="#handleBack" prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" text="Back" />
+    </children>
+</VBox>

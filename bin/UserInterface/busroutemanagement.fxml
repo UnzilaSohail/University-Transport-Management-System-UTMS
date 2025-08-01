@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.VBox?>
+<?import Controller.*?>
+<?import application.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BusRouteManagementController" spacing="10" alignment="CENTER">
+   
+    <children>
+        <Label textFill="#c3c3bf" text="Route Name:"/>
+        <TextField fx:id="routeNameTextField"/>
+        <Label textFill="#c3c3bf" text="Start Point:"/>
+        <TextField fx:id="startPointTextField"/>
+        <Label textFill="#c3c3bf" text="End Point:"/>
+        <TextField fx:id="endPointTextField"/>
+        <Label textFill="#c3c3bf" text="Route Description:"/>
+        <TextArea fx:id="routeDescriptionTextArea"/>
+        <Label textFill="#c3c3bf" text="Bus Number:"/>
+        <TextField fx:id="busNumberTextField"/>
+        <Button text="Add Information"  prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" onAction="#addInformation"/>
+        <Button text="Update Information"  prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" onAction="#updateInformation"/>
+        <Button text="Delete Information"  prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" onAction="#deleteInformation"/>
+        <Button text="View Bus Routes"  prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" onAction="#viewInfo"/>
+        <TableView fx:id="busRouteTableView">
+            <columns>
+                <TableColumn fx:id="routeNameColumn" text="Route Name" />
+                <TableColumn fx:id="startPointColumn" text="Start Point" />
+                <TableColumn fx:id="endPointColumn" text="End Point" />
+                <TableColumn fx:id="routeDescriptionColumn" text="Route Description" />
+                <TableColumn fx:id="busNumberColumn" text="Bus Number" />
+            </columns>
+        </TableView>
+        <Button text="Back" layoutX="180.0" layoutY="301.0" prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" onAction="#handleBack"/>
+    </children>
+</VBox>

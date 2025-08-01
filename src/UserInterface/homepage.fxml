@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import Controller.*?>
+<?import application.*?>
+<BorderPane prefHeight="400.0" prefWidth="600.0" styleClass="login-card" stylesheets="@../application/application.css"
+		xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.MainHomePageController"
+            fx:id="rootPane">
+
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+        
+            <Button text="Student Attendance" prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" onAction="#loadStudentAttendance"/>
+            <Button text="Bus Route Management"  prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" onAction="#loadBusRouteManagement"/>
+            <Button text="Coasters and Vans Management"  prefHeight="39.0" prefWidth="400.0" styleClass="login" stylesheets="@../application/application.css" onAction="#loadCoastersAndVansManagement"/>
+        </VBox>
+    </center>
+
+</BorderPane>

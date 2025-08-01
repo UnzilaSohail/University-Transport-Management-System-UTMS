@@ -1,0 +1,22 @@
+.login-bg {
+    -fx-background-color: #E0E8F0; /* Light Blue */
+}
+
+.login-card {
+   -fx-background-color: #30363f;
+    -fx-background-radius: 0;
+    -fx-border-color: #778899; /* Light Slate Gray */
+    -fx-border-width: 0px;
+    -fx-border-radius: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 1); /* Shadow effect */
+}
+
+.login {
+	
+    -fx-background-color:  #4682B4; /* Sky Blue */
+    -fx-text-fill: #ffffff; /* White */
+}
+
+.login:hover {
+    -fx-background-color: #87CEEB; /* Steel Blue */
+}
