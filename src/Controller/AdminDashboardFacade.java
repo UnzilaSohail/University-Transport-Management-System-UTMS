@@ -78,7 +78,7 @@ public class AdminDashboardFacade {
 	            primaryStage.show();
 	        } catch (IOException e) {
 	            e.printStackTrace();
-	        }
+			}
 	    }
 	}
 
