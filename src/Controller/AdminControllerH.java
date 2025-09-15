@@ -17,7 +17,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class AdminControllerH {
+public class AdminControllerH 
 
 	@FXML
 	 private Button btnGenerateChallan;
@@ -45,13 +45,13 @@ public class AdminControllerH {
     private void loadAllFeedbackFromDatabase() {
         String url = "jdbc:mysql://localhost:3307/utmss";
         String user = "root";
-        String password = "Kuwait914";
+        String password = "Kuwait914"
 
         String query = "SELECT * FROM FeedbackTr";
 
         try (Connection conn = DriverManager.getConnection(url, user, password);
              Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(query)) {
+             ResultSet rs = stmt.executeuery(query)) {
         	
             StringBuilder feedback = new StringBuilder();
             while (rs.next()) {
