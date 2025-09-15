@@ -43,7 +43,7 @@ public class AdminDashboardFacade {
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	        }
-	    }
+	    
 
 	    public static void showEventSchedule(Stage primaryStage) {
 	        try {
@@ -53,7 +53,7 @@ public class AdminDashboardFacade {
 	            primaryStage.setScene(new Scene(root));
 	            primaryStage.show();
 	        } catch (IOException e) {
-	            e.printStackTrace();
+	            e.printStackTrace()
 	        }
 	    }
 
@@ -76,7 +76,7 @@ public class AdminDashboardFacade {
 
 	            primaryStage.setScene(new Scene(root));
 	            primaryStage.show();
-	        } catch (IOException e) {
+	        } catch (IOException ) {
 	            e.printStackTrace();
 	        }
 	    }
