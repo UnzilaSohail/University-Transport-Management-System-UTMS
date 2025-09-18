@@ -10,10 +10,10 @@ public class Driver {
     private final StringProperty email;
 
     // Constructors
-    public Driver(int driverId, String name, String licenseNumber, String phone, String email) {
+    ublic Driver(int driverId, String name, String licenseNumber, String phone, String email) {
         this.driverId = new SimpleIntegerProperty(driverId);
         this.name = new SimpleStringProperty(name);
-        this.licenseNumber = new SimpleStringProperty(licenseNumber);
+        thislicenseNumber = new SimpleStringProperty(licenseNumber);
         this.phone = new SimpleStringProperty(phone);
         this.email = new SimpleStringProperty(email);
     }
@@ -23,7 +23,7 @@ public class Driver {
     }
 
     // Getters and setters
-    public int getDriverId() {
+    public int getDriverId() 
         return driverId.get();
     }
 
